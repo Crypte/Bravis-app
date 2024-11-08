@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@mdx-js/react": "^3.1.0",
+    "@types/mdx-js__react": "^2.0.0",
+    "vite-plugin-checker": "^0.8.0"
+  }
+}
