@@ -27,7 +27,7 @@ function AppContent() {
 
     return (
         <> <Navbar/>
-            <div className="container">
+            <div className="container mt-24">
                 <Routes>
                     <Route path="/" Component={Home}/>
                     <Route path="/manifesto" Component={Manifesto}/>

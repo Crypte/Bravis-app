@@ -61,7 +61,7 @@ export default function Navbar() {
     }, []);
     return (
 
-        <nav className="sticky top-0 border-b bg-background">
+        <nav className="fixed top-0 border-b bg-background w-full">
             <div className=" h-20 flex items-center justify-between container">
 
                 <div className={'flex items-center space-x-10'}>
