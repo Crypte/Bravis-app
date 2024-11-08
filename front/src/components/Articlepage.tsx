@@ -61,13 +61,13 @@ export default function ArticlePage() {
     const htmlContent = currentArticle !== null ? marked(articleData[currentArticle].content) : "";
 
     return (
-        <>
+        <div className={'pb-20'}>
             <Article>
                 {/* Afficher le contenu de l'article converti en HTML */}
                 <div dangerouslySetInnerHTML={{__html: htmlContent}}/>
             </Article>
             <div
-                className="fixed bottom-6 left-1/2 transform -translate-x-1/2 p-2 rounded-full border shadow-lg transition-all duration-300 ease-in-out bg-background">
+                className="fixed bottom-8 left-1/2 transform -translate-x-1/2 p-2 rounded-full border shadow-lg transition-all duration-300 ease-in-out bg-background">
                 <div className="flex items-center space-x-2">
                     <Button
                         variant="ghost"
@@ -92,7 +92,7 @@ export default function ArticlePage() {
                     </Button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
