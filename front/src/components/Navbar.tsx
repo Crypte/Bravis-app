@@ -97,7 +97,7 @@ export default function Navbar() {
                     </Button>
                 </div>
             </div>
-            <Progress value={progress} className="w-full h-1 animate-pulse transition"/>
+            <Progress value={progress} className="w-full h-1 animate-pulse transition "/>
         </nav>
     );
 }

@@ -52,13 +52,6 @@ export default function ArticlePage() {
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur : {error}</p>;
 
-    // Vérification que l'article à l'index 8 existe
-    const article = articleData[8];
-
-    if (!article) {
-        return <p>Aucun article disponible à cet index.</p>;
-    }
-
     // Convertir le contenu Markdown en HTML
     const htmlContent = currentArticle !== null ? marked(articleData[currentArticle].content) : "";
 
