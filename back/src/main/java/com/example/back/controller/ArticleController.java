@@ -1,6 +1,6 @@
 package com.example.back.controller;
 
-import com.example.back.model.Article;
+import com.example.back.dto.ArticleDTO;
 import com.example.back.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ public class ArticleController {
     private ArticleService articleService;
 
     @GetMapping("/api/articles/random")
-    public List<Article> getDailyArticles() {
+    public List<ArticleDTO> getDailyArticles() {
         return articleService.getDailyArticles();
     }
 }
