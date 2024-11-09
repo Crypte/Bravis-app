@@ -3,11 +3,13 @@ import Article from "@/components/Article";
 import {marked} from 'marked';
 import {Button} from "@/components/ui/button.tsx";
 import {ChevronLeft, ChevronRight} from "lucide-react";
+import {Badge} from "@/components/ui/badge.tsx";
 
 interface ArticleData {
     id: number
     title: string;
-    content: string; // Le contenu est en Markdown
+    content: string;
+    themeName:string
 }
 
 export default function ArticlePage() {
@@ -63,6 +65,7 @@ export default function ArticlePage() {
     return (
         <div className={'pb-20'}>
             <Article>
+                <Badge className={'mb-4'}>{articleData[currentArticle].themeName}</Badge>
                 {/* Afficher le contenu de l'article converti en HTML */}
                 <div dangerouslySetInnerHTML={{__html: htmlContent}}/>
             </Article>
