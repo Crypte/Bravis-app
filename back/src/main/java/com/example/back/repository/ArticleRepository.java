@@ -10,6 +10,6 @@ import java.util.List;
 public interface ArticleRepository extends JpaRepository<Article, Long> {
 
     // 10 random articles
-    @Query(value = "SELECT * FROM articles ORDER BY RANDOM() LIMIT :limit", nativeQuery = true)
+    @Query(value = "SELECT * FROM article ORDER BY RANDOM() LIMIT :limit", nativeQuery = true)
     List<Article> findRandomArticles(@Param("limit") int limit);
 }
