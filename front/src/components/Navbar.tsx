@@ -75,11 +75,11 @@ export default function Navbar() {
                         <Link to="/themes">Thèmes</Link>
                     </div>
                 </div>
-                <div className="text-2xl font-bold  items-center gap-2 hidden lg:flex"><span className={'w-28'}>{timeLeft}</span>
+                <div className="text-2xl font-bold  items-center gap-2 flex"><span className={'w-28'}>{timeLeft}</span>
                     <TooltipProvider >
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Info className={'w-5 h-5'}/>
+                            <Info className={'w-5 h-5 hidden lg:block'}/>
                         </TooltipTrigger>
                         <TooltipContent className={'mt-2'}>
                             <p>Temps restant avant la prochaine série de capsules</p>
